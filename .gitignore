@@ -1,0 +1,69 @@
+# =========================================================================
+#  Wind turbine DDP-HJB project -- what goes in the repo
+#
+#  Everything below still gets written to disk locally. This file only
+#  decides what GitHub carries. The rule of thumb: commit whatever
+#  report.html needs, plus the numbers; leave out the bulk.
+# =========================================================================
+
+# ---- MATLAB noise ----
+*.asv
+*.autosave
+slprj/
+codegen/
+octave-workspace
+
+# ---- OS noise ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================================================================
+#  Generated output
+# =========================================================================
+
+# Per-segment figures: save_segment_figures writes 4 PNGs per
+# (model, segment). At 10 models x 190 segments that is 7,600 files for
+# wind01 alone, ~1.3 GB across all profiles. GitHub's web UI becomes
+# unusable long before that. They are regenerable -- set
+# export_segment_figures = true in run_prediction to rebuild them locally.
+wind_profiles/*/prediction/figures/*/
+
+# Raw MATLAB workspaces. prediction_suite_results.mat holds every forecast
+# for every segment and grows quickly with long profiles. Uncomment if you
+# want the raw numbers versioned and your repo is comfortably under 1 GB.
+# wind_profiles/*/prediction_suite_results.mat
+# wind_profiles/*/control/*/control_results.mat
+
+# ---- IF THE REPO GETS TOO BIG ----
+# The full-resolution GIF tier is by far the heaviest committed item
+# (roughly 1-3 MB per file, 20 files per profile). Uncommenting the two
+# lines below drops ~40 MB per profile. The report still works: it loads
+# the web tier. Only the "full resolution" links under each animation
+# would 404.
+#
+# wind_profiles/*/prediction/animation/
+# wind_profiles/*/control/*/animation/
+#
+# Alternatively keep them and use Git LFS:
+#   git lfs install
+#   git lfs track "wind_profiles/**/animation/**/*.gif"
+
+# =========================================================================
+#  Explicitly KEPT (listed for clarity -- these are not ignored)
+# =========================================================================
+#   report.html                                   the report itself
+#   wind_profiles/manifest.json                   profile index
+#   wind_profiles/report_data.js                  what report.html reads
+#   wind_profiles/report_data.json                the fetchable twin
+#   wind_profiles/*/README.md                     renders natively on GitHub
+#   wind_profiles/*/summary_table.tex             for the thesis
+#   wind_profiles/*/report/*.txt                  written report
+#   wind_profiles/*/report/*.json                 machine-readable summaries
+#   wind_profiles/*/report/*.csv                  GitHub renders these as tables
+#   wind_profiles/*/prediction/web/               downscaled assets (the report)
+#   wind_profiles/*/prediction/statistics/        the ten comparison figures
+#   wind_profiles/*/prediction/figures/*.png      per-model timelines (not the
+#                                                 per-segment subfolders above)
+#   wind_profiles/*/control/*/web/                control assets
+#   +windlib/data/*.csv                           source wind data
