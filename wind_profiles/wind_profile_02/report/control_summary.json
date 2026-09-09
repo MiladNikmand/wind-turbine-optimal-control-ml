@@ -1,0 +1,439 @@
+{
+  "schema": "wind-control-suite/1.0",
+  "profile": "wind_profile_02",
+  "generated_utc": "2026-09-08T21:18:54Z",
+  "runs": [
+    {
+      "id": "truth",
+      "key": "truth",
+      "label": "Perfect foresight",
+      "forecast_mode": "truth",
+      "forecast_model": "",
+      "dt_controller": 0.01,
+      "num_segments": 5,
+      "duration_sec": 7.4899999999999984,
+      "t_start": 15,
+      "metrics": {
+        "rmse_wr": 0.26512210918948315,
+        "mae_wr": 0.10243967105376572,
+        "max_wr": 1.5377042796588718,
+        "mape_wr": 0.43783783863095455,
+        "nrmse_wr": 0.086404610808847288,
+        "rmse_tg": 8.3385606234718033,
+        "energy_kj": 287.90607290266365,
+        "control_effort": 2648.3498187308351,
+        "du_max": 28.908119998148507,
+        "avg_cp": 0.43811326578506121,
+        "seam_jump_mean": 0.0048407315287422037,
+        "seam_jump_max": 0.0071962820417397211
+      },
+      "panels": [
+        {
+          "key": "wr",
+          "title": "Rotor speed tracking",
+          "ylabel": "omega_r (rad/s)"
+        },
+        {
+          "key": "tg",
+          "title": "Generator torque",
+          "ylabel": "T_g (N.m)"
+        },
+        {
+          "key": "u",
+          "title": "Control input",
+          "ylabel": "u"
+        },
+        {
+          "key": "wind",
+          "title": "Wind: forecast vs truth",
+          "ylabel": "v (m/s)"
+        },
+        {
+          "key": "cp",
+          "title": "Power coefficient",
+          "ylabel": "C_p"
+        },
+        {
+          "key": "lambda",
+          "title": "Tip-speed ratio",
+          "ylabel": "lambda"
+        }
+      ],
+      "assets": {
+        "wr": {
+          "static_full_hires": "wind_profiles/wind_profile_02/control/truth/figures/wr_full.png",
+          "static_zoom_hires": "wind_profiles/wind_profile_02/control/truth/figures/wr_zoomed.png",
+          "static_full": "wind_profiles/wind_profile_02/control/truth/web/figures/wr_full.png",
+          "static_zoomed": "wind_profiles/wind_profile_02/control/truth/web/figures/wr_zoomed.png",
+          "gif_full_hires": "wind_profiles/wind_profile_02/control/truth/animation/wr_full.gif",
+          "gif_zoomed_hires": "wind_profiles/wind_profile_02/control/truth/animation/wr_zoomed.gif",
+          "gif_full": "wind_profiles/wind_profile_02/control/truth/web/animation/wr_full.gif",
+          "gif_zoomed": "wind_profiles/wind_profile_02/control/truth/web/animation/wr_zoomed.gif"
+        },
+        "tg": {
+          "static_full_hires": "wind_profiles/wind_profile_02/control/truth/figures/tg_full.png",
+          "static_zoom_hires": "wind_profiles/wind_profile_02/control/truth/figures/tg_zoomed.png",
+          "static_full": "wind_profiles/wind_profile_02/control/truth/web/figures/tg_full.png",
+          "static_zoomed": "wind_profiles/wind_profile_02/control/truth/web/figures/tg_zoomed.png",
+          "gif_full_hires": "wind_profiles/wind_profile_02/control/truth/animation/tg_full.gif",
+          "gif_zoomed_hires": "wind_profiles/wind_profile_02/control/truth/animation/tg_zoomed.gif",
+          "gif_full": "wind_profiles/wind_profile_02/control/truth/web/animation/tg_full.gif",
+          "gif_zoomed": "wind_profiles/wind_profile_02/control/truth/web/animation/tg_zoomed.gif"
+        },
+        "u": {
+          "static_full_hires": "wind_profiles/wind_profile_02/control/truth/figures/u_full.png",
+          "static_zoom_hires": "wind_profiles/wind_profile_02/control/truth/figures/u_zoomed.png",
+          "static_full": "wind_profiles/wind_profile_02/control/truth/web/figures/u_full.png",
+          "static_zoomed": "wind_profiles/wind_profile_02/control/truth/web/figures/u_zoomed.png",
+          "gif_full_hires": "wind_profiles/wind_profile_02/control/truth/animation/u_full.gif",
+          "gif_zoomed_hires": "wind_profiles/wind_profile_02/control/truth/animation/u_zoomed.gif",
+          "gif_full": "wind_profiles/wind_profile_02/control/truth/web/animation/u_full.gif",
+          "gif_zoomed": "wind_profiles/wind_profile_02/control/truth/web/animation/u_zoomed.gif"
+        },
+        "wind": {
+          "static_full_hires": "wind_profiles/wind_profile_02/control/truth/figures/wind_full.png",
+          "static_zoom_hires": "wind_profiles/wind_profile_02/control/truth/figures/wind_zoomed.png",
+          "static_full": "wind_profiles/wind_profile_02/control/truth/web/figures/wind_full.png",
+          "static_zoomed": "wind_profiles/wind_profile_02/control/truth/web/figures/wind_zoomed.png",
+          "gif_full_hires": "wind_profiles/wind_profile_02/control/truth/animation/wind_full.gif",
+          "gif_zoomed_hires": "wind_profiles/wind_profile_02/control/truth/animation/wind_zoomed.gif",
+          "gif_full": "wind_profiles/wind_profile_02/control/truth/web/animation/wind_full.gif",
+          "gif_zoomed": "wind_profiles/wind_profile_02/control/truth/web/animation/wind_zoomed.gif"
+        },
+        "cp": {
+          "static_full_hires": "wind_profiles/wind_profile_02/control/truth/figures/cp_full.png",
+          "static_zoom_hires": "wind_profiles/wind_profile_02/control/truth/figures/cp_zoomed.png",
+          "static_full": "wind_profiles/wind_profile_02/control/truth/web/figures/cp_full.png",
+          "static_zoomed": "wind_profiles/wind_profile_02/control/truth/web/figures/cp_zoomed.png",
+          "gif_full_hires": "wind_profiles/wind_profile_02/control/truth/animation/cp_full.gif",
+          "gif_zoomed_hires": "wind_profiles/wind_profile_02/control/truth/animation/cp_zoomed.gif",
+          "gif_full": "wind_profiles/wind_profile_02/control/truth/web/animation/cp_full.gif",
+          "gif_zoomed": "wind_profiles/wind_profile_02/control/truth/web/animation/cp_zoomed.gif"
+        },
+        "lambda": {
+          "static_full_hires": "wind_profiles/wind_profile_02/control/truth/figures/lambda_full.png",
+          "static_zoom_hires": "wind_profiles/wind_profile_02/control/truth/figures/lambda_zoomed.png",
+          "static_full": "wind_profiles/wind_profile_02/control/truth/web/figures/lambda_full.png",
+          "static_zoomed": "wind_profiles/wind_profile_02/control/truth/web/figures/lambda_zoomed.png",
+          "gif_full_hires": "wind_profiles/wind_profile_02/control/truth/animation/lambda_full.gif",
+          "gif_zoomed_hires": "wind_profiles/wind_profile_02/control/truth/animation/lambda_zoomed.gif",
+          "gif_full": "wind_profiles/wind_profile_02/control/truth/web/animation/lambda_full.gif",
+          "gif_zoomed": "wind_profiles/wind_profile_02/control/truth/web/animation/lambda_zoomed.gif"
+        }
+      },
+      "rmse_per_segment": [
+        0.5844260644984367,
+        0.048407245759873249,
+        0.028797099547897921,
+        0.054116899374960219,
+        0.061592741925348075
+      ],
+      "cost_per_segment": [
+        1.2889258568074986E+11,
+        8.8409836714528883E+8,
+        3.2132337619365209E+8,
+        9.9486659416112685E+8,
+        1.4392340098788266E+9
+      ],
+      "settings": {
+        "history_sec": 15,
+        "predict_sec": 1.5,
+        "stride_sec": 1.5,
+        "step_size": 0.05,
+        "max_iter": 50,
+        "selection_criterion": "RMSE",
+        "t_control_offset": 15,
+        "ddp_sec_per_segment": 0.94355432000000017,
+        "predict_sec_per_segment": 0.0069222933333333327
+      }
+    },
+    {
+      "id": "bestof",
+      "key": "bestof",
+      "label": "Best-of-segment forecast",
+      "forecast_mode": "bestof",
+      "forecast_model": "",
+      "dt_controller": 0.01,
+      "num_segments": 5,
+      "duration_sec": 7.4899999999999984,
+      "t_start": 15,
+      "metrics": {
+        "rmse_wr": 0.26563581901270078,
+        "mae_wr": 0.10243848172337625,
+        "max_wr": 1.5395423405495343,
+        "mape_wr": 0.43792209258573911,
+        "nrmse_wr": 0.0867655467339598,
+        "rmse_tg": 8.3511572248783335,
+        "energy_kj": 287.90268879292046,
+        "control_effort": 2648.4961046143908,
+        "du_max": 28.913043858564969,
+        "avg_cp": 0.43811302056513812,
+        "seam_jump_mean": 0.0046999419944508958,
+        "seam_jump_max": 0.00718252005455966
+      },
+      "panels": [
+        {
+          "key": "wr",
+          "title": "Rotor speed tracking",
+          "ylabel": "omega_r (rad/s)"
+        },
+        {
+          "key": "tg",
+          "title": "Generator torque",
+          "ylabel": "T_g (N.m)"
+        },
+        {
+          "key": "u",
+          "title": "Control input",
+          "ylabel": "u"
+        },
+        {
+          "key": "wind",
+          "title": "Wind: forecast vs truth",
+          "ylabel": "v (m/s)"
+        },
+        {
+          "key": "cp",
+          "title": "Power coefficient",
+          "ylabel": "C_p"
+        },
+        {
+          "key": "lambda",
+          "title": "Tip-speed ratio",
+          "ylabel": "lambda"
+        }
+      ],
+      "assets": {
+        "wr": {
+          "static_full_hires": "wind_profiles/wind_profile_02/control/bestof/figures/wr_full.png",
+          "static_zoom_hires": "wind_profiles/wind_profile_02/control/bestof/figures/wr_zoomed.png",
+          "static_full": "wind_profiles/wind_profile_02/control/bestof/web/figures/wr_full.png",
+          "static_zoomed": "wind_profiles/wind_profile_02/control/bestof/web/figures/wr_zoomed.png",
+          "gif_full_hires": "wind_profiles/wind_profile_02/control/bestof/animation/wr_full.gif",
+          "gif_zoomed_hires": "wind_profiles/wind_profile_02/control/bestof/animation/wr_zoomed.gif",
+          "gif_full": "wind_profiles/wind_profile_02/control/bestof/web/animation/wr_full.gif",
+          "gif_zoomed": "wind_profiles/wind_profile_02/control/bestof/web/animation/wr_zoomed.gif"
+        },
+        "tg": {
+          "static_full_hires": "wind_profiles/wind_profile_02/control/bestof/figures/tg_full.png",
+          "static_zoom_hires": "wind_profiles/wind_profile_02/control/bestof/figures/tg_zoomed.png",
+          "static_full": "wind_profiles/wind_profile_02/control/bestof/web/figures/tg_full.png",
+          "static_zoomed": "wind_profiles/wind_profile_02/control/bestof/web/figures/tg_zoomed.png",
+          "gif_full_hires": "wind_profiles/wind_profile_02/control/bestof/animation/tg_full.gif",
+          "gif_zoomed_hires": "wind_profiles/wind_profile_02/control/bestof/animation/tg_zoomed.gif",
+          "gif_full": "wind_profiles/wind_profile_02/control/bestof/web/animation/tg_full.gif",
+          "gif_zoomed": "wind_profiles/wind_profile_02/control/bestof/web/animation/tg_zoomed.gif"
+        },
+        "u": {
+          "static_full_hires": "wind_profiles/wind_profile_02/control/bestof/figures/u_full.png",
+          "static_zoom_hires": "wind_profiles/wind_profile_02/control/bestof/figures/u_zoomed.png",
+          "static_full": "wind_profiles/wind_profile_02/control/bestof/web/figures/u_full.png",
+          "static_zoomed": "wind_profiles/wind_profile_02/control/bestof/web/figures/u_zoomed.png",
+          "gif_full_hires": "wind_profiles/wind_profile_02/control/bestof/animation/u_full.gif",
+          "gif_zoomed_hires": "wind_profiles/wind_profile_02/control/bestof/animation/u_zoomed.gif",
+          "gif_full": "wind_profiles/wind_profile_02/control/bestof/web/animation/u_full.gif",
+          "gif_zoomed": "wind_profiles/wind_profile_02/control/bestof/web/animation/u_zoomed.gif"
+        },
+        "wind": {
+          "static_full_hires": "wind_profiles/wind_profile_02/control/bestof/figures/wind_full.png",
+          "static_zoom_hires": "wind_profiles/wind_profile_02/control/bestof/figures/wind_zoomed.png",
+          "static_full": "wind_profiles/wind_profile_02/control/bestof/web/figures/wind_full.png",
+          "static_zoomed": "wind_profiles/wind_profile_02/control/bestof/web/figures/wind_zoomed.png",
+          "gif_full_hires": "wind_profiles/wind_profile_02/control/bestof/animation/wind_full.gif",
+          "gif_zoomed_hires": "wind_profiles/wind_profile_02/control/bestof/animation/wind_zoomed.gif",
+          "gif_full": "wind_profiles/wind_profile_02/control/bestof/web/animation/wind_full.gif",
+          "gif_zoomed": "wind_profiles/wind_profile_02/control/bestof/web/animation/wind_zoomed.gif"
+        },
+        "cp": {
+          "static_full_hires": "wind_profiles/wind_profile_02/control/bestof/figures/cp_full.png",
+          "static_zoom_hires": "wind_profiles/wind_profile_02/control/bestof/figures/cp_zoomed.png",
+          "static_full": "wind_profiles/wind_profile_02/control/bestof/web/figures/cp_full.png",
+          "static_zoomed": "wind_profiles/wind_profile_02/control/bestof/web/figures/cp_zoomed.png",
+          "gif_full_hires": "wind_profiles/wind_profile_02/control/bestof/animation/cp_full.gif",
+          "gif_zoomed_hires": "wind_profiles/wind_profile_02/control/bestof/animation/cp_zoomed.gif",
+          "gif_full": "wind_profiles/wind_profile_02/control/bestof/web/animation/cp_full.gif",
+          "gif_zoomed": "wind_profiles/wind_profile_02/control/bestof/web/animation/cp_zoomed.gif"
+        },
+        "lambda": {
+          "static_full_hires": "wind_profiles/wind_profile_02/control/bestof/figures/lambda_full.png",
+          "static_zoom_hires": "wind_profiles/wind_profile_02/control/bestof/figures/lambda_zoomed.png",
+          "static_full": "wind_profiles/wind_profile_02/control/bestof/web/figures/lambda_full.png",
+          "static_zoomed": "wind_profiles/wind_profile_02/control/bestof/web/figures/lambda_zoomed.png",
+          "gif_full_hires": "wind_profiles/wind_profile_02/control/bestof/animation/lambda_full.gif",
+          "gif_zoomed_hires": "wind_profiles/wind_profile_02/control/bestof/animation/lambda_zoomed.gif",
+          "gif_full": "wind_profiles/wind_profile_02/control/bestof/web/animation/lambda_full.gif",
+          "gif_zoomed": "wind_profiles/wind_profile_02/control/bestof/web/animation/lambda_zoomed.gif"
+        }
+      },
+      "rmse_per_segment": [
+        0.585560864979615,
+        0.048623508748441978,
+        0.030198163400597552,
+        0.053164233164365152,
+        0.061869255315808232
+      ],
+      "cost_per_segment": [
+        1.2938528874687828E+11,
+        8.9457756255896962E+8,
+        3.4997615578232193E+8,
+        9.5425571619156539E+8,
+        1.4585328004827125E+9
+      ],
+      "settings": {
+        "history_sec": 15,
+        "predict_sec": 1.5,
+        "stride_sec": 1.5,
+        "step_size": 0.05,
+        "max_iter": 50,
+        "selection_criterion": "RMSE",
+        "t_control_offset": 15,
+        "ddp_sec_per_segment": 0.97169500000000009,
+        "predict_sec_per_segment": 0.0069222933333333327
+      }
+    },
+    {
+      "id": "rbf",
+      "key": "rbf",
+      "label": "Forecast: RBF",
+      "forecast_mode": "model",
+      "forecast_model": "rbf",
+      "dt_controller": 0.01,
+      "num_segments": 5,
+      "duration_sec": 7.4899999999999984,
+      "t_start": 15,
+      "metrics": {
+        "rmse_wr": 0.26563581901270078,
+        "mae_wr": 0.10243848172337625,
+        "max_wr": 1.5395423405495343,
+        "mape_wr": 0.43792209258573911,
+        "nrmse_wr": 0.0867655467339598,
+        "rmse_tg": 8.3511572248783335,
+        "energy_kj": 287.90268879292046,
+        "control_effort": 2648.4961046143908,
+        "du_max": 28.913043858564969,
+        "avg_cp": 0.43811302056513812,
+        "seam_jump_mean": 0.0046999419944508958,
+        "seam_jump_max": 0.00718252005455966
+      },
+      "panels": [
+        {
+          "key": "wr",
+          "title": "Rotor speed tracking",
+          "ylabel": "omega_r (rad/s)"
+        },
+        {
+          "key": "tg",
+          "title": "Generator torque",
+          "ylabel": "T_g (N.m)"
+        },
+        {
+          "key": "u",
+          "title": "Control input",
+          "ylabel": "u"
+        },
+        {
+          "key": "wind",
+          "title": "Wind: forecast vs truth",
+          "ylabel": "v (m/s)"
+        },
+        {
+          "key": "cp",
+          "title": "Power coefficient",
+          "ylabel": "C_p"
+        },
+        {
+          "key": "lambda",
+          "title": "Tip-speed ratio",
+          "ylabel": "lambda"
+        }
+      ],
+      "assets": {
+        "wr": {
+          "static_full_hires": "wind_profiles/wind_profile_02/control/rbf/figures/wr_full.png",
+          "static_zoom_hires": "wind_profiles/wind_profile_02/control/rbf/figures/wr_zoomed.png",
+          "static_full": "wind_profiles/wind_profile_02/control/rbf/web/figures/wr_full.png",
+          "static_zoomed": "wind_profiles/wind_profile_02/control/rbf/web/figures/wr_zoomed.png",
+          "gif_full_hires": "wind_profiles/wind_profile_02/control/rbf/animation/wr_full.gif",
+          "gif_zoomed_hires": "wind_profiles/wind_profile_02/control/rbf/animation/wr_zoomed.gif",
+          "gif_full": "wind_profiles/wind_profile_02/control/rbf/web/animation/wr_full.gif",
+          "gif_zoomed": "wind_profiles/wind_profile_02/control/rbf/web/animation/wr_zoomed.gif"
+        },
+        "tg": {
+          "static_full_hires": "wind_profiles/wind_profile_02/control/rbf/figures/tg_full.png",
+          "static_zoom_hires": "wind_profiles/wind_profile_02/control/rbf/figures/tg_zoomed.png",
+          "static_full": "wind_profiles/wind_profile_02/control/rbf/web/figures/tg_full.png",
+          "static_zoomed": "wind_profiles/wind_profile_02/control/rbf/web/figures/tg_zoomed.png",
+          "gif_full_hires": "wind_profiles/wind_profile_02/control/rbf/animation/tg_full.gif",
+          "gif_zoomed_hires": "wind_profiles/wind_profile_02/control/rbf/animation/tg_zoomed.gif",
+          "gif_full": "wind_profiles/wind_profile_02/control/rbf/web/animation/tg_full.gif",
+          "gif_zoomed": "wind_profiles/wind_profile_02/control/rbf/web/animation/tg_zoomed.gif"
+        },
+        "u": {
+          "static_full_hires": "wind_profiles/wind_profile_02/control/rbf/figures/u_full.png",
+          "static_zoom_hires": "wind_profiles/wind_profile_02/control/rbf/figures/u_zoomed.png",
+          "static_full": "wind_profiles/wind_profile_02/control/rbf/web/figures/u_full.png",
+          "static_zoomed": "wind_profiles/wind_profile_02/control/rbf/web/figures/u_zoomed.png",
+          "gif_full_hires": "wind_profiles/wind_profile_02/control/rbf/animation/u_full.gif",
+          "gif_zoomed_hires": "wind_profiles/wind_profile_02/control/rbf/animation/u_zoomed.gif",
+          "gif_full": "wind_profiles/wind_profile_02/control/rbf/web/animation/u_full.gif",
+          "gif_zoomed": "wind_profiles/wind_profile_02/control/rbf/web/animation/u_zoomed.gif"
+        },
+        "wind": {
+          "static_full_hires": "wind_profiles/wind_profile_02/control/rbf/figures/wind_full.png",
+          "static_zoom_hires": "wind_profiles/wind_profile_02/control/rbf/figures/wind_zoomed.png",
+          "static_full": "wind_profiles/wind_profile_02/control/rbf/web/figures/wind_full.png",
+          "static_zoomed": "wind_profiles/wind_profile_02/control/rbf/web/figures/wind_zoomed.png",
+          "gif_full_hires": "wind_profiles/wind_profile_02/control/rbf/animation/wind_full.gif",
+          "gif_zoomed_hires": "wind_profiles/wind_profile_02/control/rbf/animation/wind_zoomed.gif",
+          "gif_full": "wind_profiles/wind_profile_02/control/rbf/web/animation/wind_full.gif",
+          "gif_zoomed": "wind_profiles/wind_profile_02/control/rbf/web/animation/wind_zoomed.gif"
+        },
+        "cp": {
+          "static_full_hires": "wind_profiles/wind_profile_02/control/rbf/figures/cp_full.png",
+          "static_zoom_hires": "wind_profiles/wind_profile_02/control/rbf/figures/cp_zoomed.png",
+          "static_full": "wind_profiles/wind_profile_02/control/rbf/web/figures/cp_full.png",
+          "static_zoomed": "wind_profiles/wind_profile_02/control/rbf/web/figures/cp_zoomed.png",
+          "gif_full_hires": "wind_profiles/wind_profile_02/control/rbf/animation/cp_full.gif",
+          "gif_zoomed_hires": "wind_profiles/wind_profile_02/control/rbf/animation/cp_zoomed.gif",
+          "gif_full": "wind_profiles/wind_profile_02/control/rbf/web/animation/cp_full.gif",
+          "gif_zoomed": "wind_profiles/wind_profile_02/control/rbf/web/animation/cp_zoomed.gif"
+        },
+        "lambda": {
+          "static_full_hires": "wind_profiles/wind_profile_02/control/rbf/figures/lambda_full.png",
+          "static_zoom_hires": "wind_profiles/wind_profile_02/control/rbf/figures/lambda_zoomed.png",
+          "static_full": "wind_profiles/wind_profile_02/control/rbf/web/figures/lambda_full.png",
+          "static_zoomed": "wind_profiles/wind_profile_02/control/rbf/web/figures/lambda_zoomed.png",
+          "gif_full_hires": "wind_profiles/wind_profile_02/control/rbf/animation/lambda_full.gif",
+          "gif_zoomed_hires": "wind_profiles/wind_profile_02/control/rbf/animation/lambda_zoomed.gif",
+          "gif_full": "wind_profiles/wind_profile_02/control/rbf/web/animation/lambda_full.gif",
+          "gif_zoomed": "wind_profiles/wind_profile_02/control/rbf/web/animation/lambda_zoomed.gif"
+        }
+      },
+      "rmse_per_segment": [
+        0.585560864979615,
+        0.048623508748441978,
+        0.030198163400597552,
+        0.053164233164365152,
+        0.061869255315808232
+      ],
+      "cost_per_segment": [
+        1.2938528874687828E+11,
+        8.9457756255896962E+8,
+        3.4997615578232193E+8,
+        9.5425571619156539E+8,
+        1.4585328004827125E+9
+      ],
+      "settings": {
+        "history_sec": 15,
+        "predict_sec": 1.5,
+        "stride_sec": 1.5,
+        "step_size": 0.05,
+        "max_iter": 50,
+        "selection_criterion": "RMSE",
+        "t_control_offset": 15,
+        "ddp_sec_per_segment": 0.95625924,
+        "predict_sec_per_segment": 0.0069222933333333327
+      }
+    }
+  ]
+}
