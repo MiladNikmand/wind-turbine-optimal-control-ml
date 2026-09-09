@@ -1,0 +1,1049 @@
+{
+  "run": "wind_profile_04",
+  "schema": "wind-prediction-suite/1.1",
+  "generated_utc": "2026-09-08T20:47:37Z",
+  "settings": {
+    "history_sec": 15,
+    "predict_sec": 1.5,
+    "stride_sec": 1.5,
+    "step_size": 0.05,
+    "selection_criterion": "RMSE",
+    "num_segments": 190,
+    "signal_length": 6001,
+    "duration_sec": 300,
+    "wind_min": 10,
+    "wind_max": 15,
+    "wind_mean": 12.361686764573989,
+    "wind_std": 1.004246587432196,
+    "models_to_run": [
+      "rbf",
+      "rbf_arima",
+      "arima"
+    ]
+  },
+  "model_order": [
+    "rbf",
+    "rbf_arima",
+    "arima"
+  ],
+  "models": {
+    "rbf": {
+      "name": "rbf",
+      "rank": 1,
+      "rmse": 0.051052152064479814,
+      "nrmse": 0.010210430412895963,
+      "mae": 0.045113485945563629,
+      "mape": 0.36504552758182396,
+      "smape": 0.36508201526727774,
+      "r2": 0.78066574121019816,
+      "dm_pvalue": 1,
+      "time_sec": 0.012224094210526316,
+      "assets": {
+        "static_full_hires": "wind_profiles/wind_profile_04/prediction/figures/rbf_full_timeline.png",
+        "static_zoom_hires": "wind_profiles/wind_profile_04/prediction/figures/rbf_zoomed_timeline.png",
+        "static_full": "wind_profiles/wind_profile_04/prediction/web/figures/rbf_full.png",
+        "static_zoomed": "wind_profiles/wind_profile_04/prediction/web/figures/rbf_zoomed.png",
+        "gif_full_hires": "wind_profiles/wind_profile_04/prediction/animation/rbf/full.gif",
+        "gif_zoomed_hires": "wind_profiles/wind_profile_04/prediction/animation/rbf/zoomed.gif",
+        "gif_full": "wind_profiles/wind_profile_04/prediction/web/animation/rbf/full.gif",
+        "gif_zoomed": "wind_profiles/wind_profile_04/prediction/web/animation/rbf/zoomed.gif"
+      }
+    },
+    "rbf_arima": {
+      "name": "rbf_arima",
+      "rank": 2,
+      "rmse": 0.051052152064479814,
+      "nrmse": 0.010210430412895963,
+      "mae": 0.045113485945563629,
+      "mape": 0.36504552758182396,
+      "smape": 0.36508201526727774,
+      "r2": 0.78066574121019816,
+      "dm_pvalue": null,
+      "time_sec": 0.083770282105263119,
+      "assets": {
+        "static_full_hires": "wind_profiles/wind_profile_04/prediction/figures/rbf_arima_full_timeline.png",
+        "static_zoom_hires": "wind_profiles/wind_profile_04/prediction/figures/rbf_arima_zoomed_timeline.png",
+        "static_full": "wind_profiles/wind_profile_04/prediction/web/figures/rbf_arima_full.png",
+        "static_zoomed": "wind_profiles/wind_profile_04/prediction/web/figures/rbf_arima_zoomed.png",
+        "gif_full_hires": "wind_profiles/wind_profile_04/prediction/animation/rbf_arima/full.gif",
+        "gif_zoomed_hires": "wind_profiles/wind_profile_04/prediction/animation/rbf_arima/zoomed.gif",
+        "gif_full": "wind_profiles/wind_profile_04/prediction/web/animation/rbf_arima/full.gif",
+        "gif_zoomed": "wind_profiles/wind_profile_04/prediction/web/animation/rbf_arima/zoomed.gif"
+      }
+    },
+    "arima": {
+      "name": "arima",
+      "rank": 3,
+      "rmse": 0.14794961482691654,
+      "nrmse": 0.029589922965383316,
+      "mae": 0.11136216523929569,
+      "mape": 0.90018782873005943,
+      "smape": 0.900612491845739,
+      "r2": -2.6180966937949521,
+      "dm_pvalue": 0,
+      "time_sec": 0.2895480757894735,
+      "assets": {
+        "static_full_hires": "wind_profiles/wind_profile_04/prediction/figures/arima_full_timeline.png",
+        "static_zoom_hires": "wind_profiles/wind_profile_04/prediction/figures/arima_zoomed_timeline.png",
+        "static_full": "wind_profiles/wind_profile_04/prediction/web/figures/arima_full.png",
+        "static_zoomed": "wind_profiles/wind_profile_04/prediction/web/figures/arima_zoomed.png",
+        "gif_full_hires": "wind_profiles/wind_profile_04/prediction/animation/arima/full.gif",
+        "gif_zoomed_hires": "wind_profiles/wind_profile_04/prediction/animation/arima/zoomed.gif",
+        "gif_full": "wind_profiles/wind_profile_04/prediction/web/animation/arima/full.gif",
+        "gif_zoomed": "wind_profiles/wind_profile_04/prediction/web/animation/arima/zoomed.gif"
+      }
+    }
+  },
+  "segment_best": [
+    {
+      "segment": 1,
+      "model": "rbf",
+      "rmse": 0.13159578834644689
+    },
+    {
+      "segment": 2,
+      "model": "arima",
+      "rmse": 0.0671772409915665
+    },
+    {
+      "segment": 3,
+      "model": "rbf",
+      "rmse": 0.01852386805250179
+    },
+    {
+      "segment": 4,
+      "model": "rbf",
+      "rmse": 0.040848928322261849
+    },
+    {
+      "segment": 5,
+      "model": "rbf",
+      "rmse": 0.064941473304402364
+    },
+    {
+      "segment": 6,
+      "model": "arima",
+      "rmse": 0.019993786596965598
+    },
+    {
+      "segment": 7,
+      "model": "rbf",
+      "rmse": 0.014400376291055964
+    },
+    {
+      "segment": 8,
+      "model": "rbf",
+      "rmse": 0.013693674226472229
+    },
+    {
+      "segment": 9,
+      "model": "rbf",
+      "rmse": 0.011940560147378532
+    },
+    {
+      "segment": 10,
+      "model": "rbf",
+      "rmse": 0.011010941435903237
+    },
+    {
+      "segment": 11,
+      "model": "rbf",
+      "rmse": 0.072377443833374938
+    },
+    {
+      "segment": 12,
+      "model": "arima",
+      "rmse": 0.0905825208707677
+    },
+    {
+      "segment": 13,
+      "model": "rbf",
+      "rmse": 0.0580382101114525
+    },
+    {
+      "segment": 14,
+      "model": "rbf",
+      "rmse": 0.046323513450152488
+    },
+    {
+      "segment": 15,
+      "model": "rbf",
+      "rmse": 0.17277492167342845
+    },
+    {
+      "segment": 16,
+      "model": "arima",
+      "rmse": 0.024845732318999402
+    },
+    {
+      "segment": 17,
+      "model": "rbf",
+      "rmse": 0.02689169322308262
+    },
+    {
+      "segment": 18,
+      "model": "rbf",
+      "rmse": 0.13480082176038768
+    },
+    {
+      "segment": 19,
+      "model": "arima",
+      "rmse": 0.013080162798938652
+    },
+    {
+      "segment": 20,
+      "model": "rbf",
+      "rmse": 0.033542441551686134
+    },
+    {
+      "segment": 21,
+      "model": "rbf",
+      "rmse": 0.045973654123656962
+    },
+    {
+      "segment": 22,
+      "model": "arima",
+      "rmse": 0.033487663718879936
+    },
+    {
+      "segment": 23,
+      "model": "rbf",
+      "rmse": 0.039507630033943815
+    },
+    {
+      "segment": 24,
+      "model": "rbf",
+      "rmse": 0.011846559601875015
+    },
+    {
+      "segment": 25,
+      "model": "rbf",
+      "rmse": 0.061862620232990544
+    },
+    {
+      "segment": 26,
+      "model": "rbf",
+      "rmse": 0.063205831090099529
+    },
+    {
+      "segment": 27,
+      "model": "rbf",
+      "rmse": 0.032521723091417237
+    },
+    {
+      "segment": 28,
+      "model": "rbf",
+      "rmse": 0.027625209260193948
+    },
+    {
+      "segment": 29,
+      "model": "arima",
+      "rmse": 0.04066349522331
+    },
+    {
+      "segment": 30,
+      "model": "rbf",
+      "rmse": 0.046472143967079105
+    },
+    {
+      "segment": 31,
+      "model": "rbf",
+      "rmse": 0.016562938861207473
+    },
+    {
+      "segment": 32,
+      "model": "rbf",
+      "rmse": 0.026009512426148712
+    },
+    {
+      "segment": 33,
+      "model": "rbf",
+      "rmse": 0.036004521942960374
+    },
+    {
+      "segment": 34,
+      "model": "rbf",
+      "rmse": 0.007254304384029321
+    },
+    {
+      "segment": 35,
+      "model": "rbf",
+      "rmse": 0.012647160236354187
+    },
+    {
+      "segment": 36,
+      "model": "rbf",
+      "rmse": 0.0086161295057253819
+    },
+    {
+      "segment": 37,
+      "model": "rbf",
+      "rmse": 0.012613759414881541
+    },
+    {
+      "segment": 38,
+      "model": "rbf",
+      "rmse": 0.021893621082701268
+    },
+    {
+      "segment": 39,
+      "model": "rbf",
+      "rmse": 0.018211352597520818
+    },
+    {
+      "segment": 40,
+      "model": "rbf",
+      "rmse": 0.057483360078138777
+    },
+    {
+      "segment": 41,
+      "model": "rbf",
+      "rmse": 0.04943630844097896
+    },
+    {
+      "segment": 42,
+      "model": "rbf",
+      "rmse": 0.02881674052651503
+    },
+    {
+      "segment": 43,
+      "model": "rbf",
+      "rmse": 0.0096217579394983922
+    },
+    {
+      "segment": 44,
+      "model": "rbf",
+      "rmse": 0.02191547012897228
+    },
+    {
+      "segment": 45,
+      "model": "rbf",
+      "rmse": 0.043799626295466666
+    },
+    {
+      "segment": 46,
+      "model": "rbf",
+      "rmse": 0.022471640167825994
+    },
+    {
+      "segment": 47,
+      "model": "rbf",
+      "rmse": 0.11055424678287865
+    },
+    {
+      "segment": 48,
+      "model": "rbf",
+      "rmse": 0.062142624526469771
+    },
+    {
+      "segment": 49,
+      "model": "rbf",
+      "rmse": 0.0034580943680327229
+    },
+    {
+      "segment": 50,
+      "model": "rbf",
+      "rmse": 0.01788415312330361
+    },
+    {
+      "segment": 51,
+      "model": "rbf",
+      "rmse": 0.013708362248069856
+    },
+    {
+      "segment": 52,
+      "model": "arima",
+      "rmse": 0.056448436532958862
+    },
+    {
+      "segment": 53,
+      "model": "arima",
+      "rmse": 0.10065362780628123
+    },
+    {
+      "segment": 54,
+      "model": "rbf",
+      "rmse": 0.061117791088915373
+    },
+    {
+      "segment": 55,
+      "model": "rbf",
+      "rmse": 0.013111946774041559
+    },
+    {
+      "segment": 56,
+      "model": "rbf",
+      "rmse": 0.01585974764860602
+    },
+    {
+      "segment": 57,
+      "model": "rbf",
+      "rmse": 0.054179888666698386
+    },
+    {
+      "segment": 58,
+      "model": "rbf",
+      "rmse": 0.03584618393658736
+    },
+    {
+      "segment": 59,
+      "model": "arima",
+      "rmse": 0.013635560847764636
+    },
+    {
+      "segment": 60,
+      "model": "rbf",
+      "rmse": 0.076593940326843607
+    },
+    {
+      "segment": 61,
+      "model": "rbf",
+      "rmse": 0.036666213630755534
+    },
+    {
+      "segment": 62,
+      "model": "arima",
+      "rmse": 0.085669248511419313
+    },
+    {
+      "segment": 63,
+      "model": "arima",
+      "rmse": 0.081058481947192937
+    },
+    {
+      "segment": 64,
+      "model": "rbf",
+      "rmse": 0.0041420984821075712
+    },
+    {
+      "segment": 65,
+      "model": "rbf",
+      "rmse": 0.030934742711746139
+    },
+    {
+      "segment": 66,
+      "model": "rbf",
+      "rmse": 0.02939034995080864
+    },
+    {
+      "segment": 67,
+      "model": "rbf",
+      "rmse": 0.012932170635021188
+    },
+    {
+      "segment": 68,
+      "model": "rbf",
+      "rmse": 0.11959089609385701
+    },
+    {
+      "segment": 69,
+      "model": "arima",
+      "rmse": 0.031606138407004089
+    },
+    {
+      "segment": 70,
+      "model": "rbf",
+      "rmse": 0.027618129444503411
+    },
+    {
+      "segment": 71,
+      "model": "rbf",
+      "rmse": 0.0061081940234368045
+    },
+    {
+      "segment": 72,
+      "model": "arima",
+      "rmse": 0.043711666941234142
+    },
+    {
+      "segment": 73,
+      "model": "rbf",
+      "rmse": 0.024467766227805211
+    },
+    {
+      "segment": 74,
+      "model": "rbf",
+      "rmse": 0.033964609155336216
+    },
+    {
+      "segment": 75,
+      "model": "rbf",
+      "rmse": 0.039630057733184607
+    },
+    {
+      "segment": 76,
+      "model": "arima",
+      "rmse": 0.022876973823101852
+    },
+    {
+      "segment": 77,
+      "model": "rbf",
+      "rmse": 0.018904214548059697
+    },
+    {
+      "segment": 78,
+      "model": "rbf",
+      "rmse": 0.01257262866689041
+    },
+    {
+      "segment": 79,
+      "model": "arima",
+      "rmse": 0.027452364521903434
+    },
+    {
+      "segment": 80,
+      "model": "rbf",
+      "rmse": 0.091682174063428892
+    },
+    {
+      "segment": 81,
+      "model": "rbf",
+      "rmse": 0.056365657370105085
+    },
+    {
+      "segment": 82,
+      "model": "rbf",
+      "rmse": 0.061615052442707062
+    },
+    {
+      "segment": 83,
+      "model": "rbf",
+      "rmse": 0.087041179879228311
+    },
+    {
+      "segment": 84,
+      "model": "rbf",
+      "rmse": 0.022708032957888126
+    },
+    {
+      "segment": 85,
+      "model": "rbf",
+      "rmse": 0.065628561666224425
+    },
+    {
+      "segment": 86,
+      "model": "arima",
+      "rmse": 0.053358301308886191
+    },
+    {
+      "segment": 87,
+      "model": "rbf",
+      "rmse": 0.017273613375174125
+    },
+    {
+      "segment": 88,
+      "model": "rbf",
+      "rmse": 0.011761568083834788
+    },
+    {
+      "segment": 89,
+      "model": "rbf",
+      "rmse": 0.021170922663320862
+    },
+    {
+      "segment": 90,
+      "model": "rbf",
+      "rmse": 0.04445807880098359
+    },
+    {
+      "segment": 91,
+      "model": "rbf",
+      "rmse": 0.072442909534151431
+    },
+    {
+      "segment": 92,
+      "model": "arima",
+      "rmse": 0.039542392061707447
+    },
+    {
+      "segment": 93,
+      "model": "rbf",
+      "rmse": 0.020211202654706571
+    },
+    {
+      "segment": 94,
+      "model": "rbf",
+      "rmse": 0.0225798813674894
+    },
+    {
+      "segment": 95,
+      "model": "rbf",
+      "rmse": 0.092339881274100657
+    },
+    {
+      "segment": 96,
+      "model": "arima",
+      "rmse": 0.018115206937442885
+    },
+    {
+      "segment": 97,
+      "model": "rbf",
+      "rmse": 0.0079294050491223525
+    },
+    {
+      "segment": 98,
+      "model": "rbf",
+      "rmse": 0.049886893644821372
+    },
+    {
+      "segment": 99,
+      "model": "arima",
+      "rmse": 0.066845026770636612
+    },
+    {
+      "segment": 100,
+      "model": "rbf",
+      "rmse": 0.011516994780747903
+    },
+    {
+      "segment": 101,
+      "model": "rbf",
+      "rmse": 0.0088088514688803229
+    },
+    {
+      "segment": 102,
+      "model": "rbf",
+      "rmse": 0.0084649268751135678
+    },
+    {
+      "segment": 103,
+      "model": "rbf",
+      "rmse": 0.011940364944452339
+    },
+    {
+      "segment": 104,
+      "model": "rbf",
+      "rmse": 0.01616466352656979
+    },
+    {
+      "segment": 105,
+      "model": "arima",
+      "rmse": 0.064186230199497665
+    },
+    {
+      "segment": 106,
+      "model": "rbf",
+      "rmse": 0.032002943069229878
+    },
+    {
+      "segment": 107,
+      "model": "rbf",
+      "rmse": 0.028033925749007944
+    },
+    {
+      "segment": 108,
+      "model": "rbf",
+      "rmse": 0.15908072052082092
+    },
+    {
+      "segment": 109,
+      "model": "arima",
+      "rmse": 0.031927377943734306
+    },
+    {
+      "segment": 110,
+      "model": "rbf",
+      "rmse": 0.020507288582998905
+    },
+    {
+      "segment": 111,
+      "model": "rbf",
+      "rmse": 0.088241652661488132
+    },
+    {
+      "segment": 112,
+      "model": "rbf",
+      "rmse": 0.0086157700277176077
+    },
+    {
+      "segment": 113,
+      "model": "rbf",
+      "rmse": 0.0078350693365372027
+    },
+    {
+      "segment": 114,
+      "model": "rbf",
+      "rmse": 0.065846833693299647
+    },
+    {
+      "segment": 115,
+      "model": "arima",
+      "rmse": 0.071879330079463427
+    },
+    {
+      "segment": 116,
+      "model": "arima",
+      "rmse": 0.021657796460502469
+    },
+    {
+      "segment": 117,
+      "model": "rbf",
+      "rmse": 0.0325775695940955
+    },
+    {
+      "segment": 118,
+      "model": "rbf",
+      "rmse": 0.031838073994148869
+    },
+    {
+      "segment": 119,
+      "model": "arima",
+      "rmse": 0.011635933352181736
+    },
+    {
+      "segment": 120,
+      "model": "rbf",
+      "rmse": 0.010979387180006166
+    },
+    {
+      "segment": 121,
+      "model": "rbf",
+      "rmse": 0.091309121147981342
+    },
+    {
+      "segment": 122,
+      "model": "arima",
+      "rmse": 0.082186258353951935
+    },
+    {
+      "segment": 123,
+      "model": "rbf",
+      "rmse": 0.025702403449993628
+    },
+    {
+      "segment": 124,
+      "model": "rbf",
+      "rmse": 0.030531816745607503
+    },
+    {
+      "segment": 125,
+      "model": "arima",
+      "rmse": 0.1587093786049418
+    },
+    {
+      "segment": 126,
+      "model": "rbf",
+      "rmse": 0.019540215347038096
+    },
+    {
+      "segment": 127,
+      "model": "rbf",
+      "rmse": 0.053853788404008868
+    },
+    {
+      "segment": 128,
+      "model": "rbf",
+      "rmse": 0.055087846467795958
+    },
+    {
+      "segment": 129,
+      "model": "rbf",
+      "rmse": 0.021260266492103705
+    },
+    {
+      "segment": 130,
+      "model": "rbf",
+      "rmse": 0.029059728559033739
+    },
+    {
+      "segment": 131,
+      "model": "rbf",
+      "rmse": 0.043322536746963666
+    },
+    {
+      "segment": 132,
+      "model": "arima",
+      "rmse": 0.042497997416105604
+    },
+    {
+      "segment": 133,
+      "model": "rbf",
+      "rmse": 0.10717346610457243
+    },
+    {
+      "segment": 134,
+      "model": "rbf",
+      "rmse": 0.057790765022419276
+    },
+    {
+      "segment": 135,
+      "model": "rbf",
+      "rmse": 0.010979733818516517
+    },
+    {
+      "segment": 136,
+      "model": "arima",
+      "rmse": 0.011964763461754699
+    },
+    {
+      "segment": 137,
+      "model": "rbf",
+      "rmse": 0.028875950065233316
+    },
+    {
+      "segment": 138,
+      "model": "rbf",
+      "rmse": 0.11223631731442871
+    },
+    {
+      "segment": 139,
+      "model": "arima",
+      "rmse": 0.013318892466000631
+    },
+    {
+      "segment": 140,
+      "model": "rbf",
+      "rmse": 0.061402872571744233
+    },
+    {
+      "segment": 141,
+      "model": "rbf",
+      "rmse": 0.053598655188596252
+    },
+    {
+      "segment": 142,
+      "model": "rbf",
+      "rmse": 0.025129557481519897
+    },
+    {
+      "segment": 143,
+      "model": "arima",
+      "rmse": 0.049436410231631922
+    },
+    {
+      "segment": 144,
+      "model": "rbf",
+      "rmse": 0.050888658199123873
+    },
+    {
+      "segment": 145,
+      "model": "rbf",
+      "rmse": 0.11083123213605596
+    },
+    {
+      "segment": 146,
+      "model": "rbf",
+      "rmse": 0.026136581781381441
+    },
+    {
+      "segment": 147,
+      "model": "rbf",
+      "rmse": 0.01498613437564936
+    },
+    {
+      "segment": 148,
+      "model": "rbf",
+      "rmse": 0.041435897315983058
+    },
+    {
+      "segment": 149,
+      "model": "rbf",
+      "rmse": 0.067430462660144047
+    },
+    {
+      "segment": 150,
+      "model": "rbf",
+      "rmse": 0.051342365213978676
+    },
+    {
+      "segment": 151,
+      "model": "rbf",
+      "rmse": 0.035155591428567792
+    },
+    {
+      "segment": 152,
+      "model": "rbf",
+      "rmse": 0.038227400657927832
+    },
+    {
+      "segment": 153,
+      "model": "rbf",
+      "rmse": 0.034985026358281532
+    },
+    {
+      "segment": 154,
+      "model": "rbf",
+      "rmse": 0.0064278898926217248
+    },
+    {
+      "segment": 155,
+      "model": "rbf",
+      "rmse": 0.005734088564669667
+    },
+    {
+      "segment": 156,
+      "model": "rbf",
+      "rmse": 0.0028935594139873223
+    },
+    {
+      "segment": 157,
+      "model": "rbf",
+      "rmse": 0.028378217387016753
+    },
+    {
+      "segment": 158,
+      "model": "rbf",
+      "rmse": 0.018620283589925707
+    },
+    {
+      "segment": 159,
+      "model": "rbf",
+      "rmse": 0.01164774556643
+    },
+    {
+      "segment": 160,
+      "model": "rbf",
+      "rmse": 0.055771964407013271
+    },
+    {
+      "segment": 161,
+      "model": "rbf",
+      "rmse": 0.02101320452173442
+    },
+    {
+      "segment": 162,
+      "model": "rbf",
+      "rmse": 0.01974555600978864
+    },
+    {
+      "segment": 163,
+      "model": "rbf",
+      "rmse": 0.020172162547194568
+    },
+    {
+      "segment": 164,
+      "model": "rbf",
+      "rmse": 0.011155639750582341
+    },
+    {
+      "segment": 165,
+      "model": "rbf",
+      "rmse": 0.017223046989761567
+    },
+    {
+      "segment": 166,
+      "model": "rbf",
+      "rmse": 0.017772580942460186
+    },
+    {
+      "segment": 167,
+      "model": "rbf",
+      "rmse": 0.0070559719043663217
+    },
+    {
+      "segment": 168,
+      "model": "rbf",
+      "rmse": 0.073206773637959729
+    },
+    {
+      "segment": 169,
+      "model": "rbf",
+      "rmse": 0.037501171554930039
+    },
+    {
+      "segment": 170,
+      "model": "rbf",
+      "rmse": 0.068625560475576455
+    },
+    {
+      "segment": 171,
+      "model": "rbf",
+      "rmse": 0.033122898901695758
+    },
+    {
+      "segment": 172,
+      "model": "arima",
+      "rmse": 0.069771386007676073
+    },
+    {
+      "segment": 173,
+      "model": "rbf",
+      "rmse": 0.066703095245250685
+    },
+    {
+      "segment": 174,
+      "model": "rbf",
+      "rmse": 0.052445377329790717
+    },
+    {
+      "segment": 175,
+      "model": "rbf",
+      "rmse": 0.12857529124608766
+    },
+    {
+      "segment": 176,
+      "model": "arima",
+      "rmse": 0.022082225192434184
+    },
+    {
+      "segment": 177,
+      "model": "rbf",
+      "rmse": 0.038920205682348712
+    },
+    {
+      "segment": 178,
+      "model": "rbf",
+      "rmse": 0.046627001994923943
+    },
+    {
+      "segment": 179,
+      "model": "arima",
+      "rmse": 0.020701248894734493
+    },
+    {
+      "segment": 180,
+      "model": "rbf",
+      "rmse": 0.043683591607877194
+    },
+    {
+      "segment": 181,
+      "model": "rbf",
+      "rmse": 0.061358295846860748
+    },
+    {
+      "segment": 182,
+      "model": "arima",
+      "rmse": 0.019708119090760673
+    },
+    {
+      "segment": 183,
+      "model": "arima",
+      "rmse": 0.037740062037795757
+    },
+    {
+      "segment": 184,
+      "model": "rbf",
+      "rmse": 0.1079282807376737
+    },
+    {
+      "segment": 185,
+      "model": "rbf",
+      "rmse": 0.021219731707389857
+    },
+    {
+      "segment": 186,
+      "model": "rbf",
+      "rmse": 0.052267988530965037
+    },
+    {
+      "segment": 187,
+      "model": "rbf",
+      "rmse": 0.0089475972842435747
+    },
+    {
+      "segment": 188,
+      "model": "rbf",
+      "rmse": 0.0756488317652351
+    },
+    {
+      "segment": 189,
+      "model": "arima",
+      "rmse": 0.092213844133930842
+    },
+    {
+      "segment": 190,
+      "model": "arima",
+      "rmse": 0.10065516667370601
+    }
+  ]
+}
