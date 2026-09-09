@@ -1,0 +1,91 @@
+=====================================================
+ WIND PREDICTION SUITE -- RUN REPORT
+ Run: wind_profile_07
+=====================================================
+
+Settings
+--------
+ history_sec          : 15.000
+ predict_sec          : 1.500
+ stride_sec           : 1.500
+ selection_criterion  : RMSE
+ num_segments         : 56
+ models_to_run        : rbf, rbf_arima, arima
+
+Summary (sorted by RMSE)
+------------------------
+Model              RMSE        MAE       MAPE         R2     Time_sec
+rbf            0.070545   0.059863     0.4125     0.8121    0.0074906
+rbf_arima      0.070545   0.059863     0.4125     0.8121     0.077791
+arima           0.45519    0.37451     2.5507     -3.411      0.26094
+
+Best model per segment (criterion: RMSE)
+----------------------------------------
+ segment   1 -> rbf        (RMSE = 0.042264)
+ segment   2 -> rbf        (RMSE = 0.089398)
+ segment   3 -> rbf        (RMSE = 0.13876)
+ segment   4 -> rbf        (RMSE = 0.075942)
+ segment   5 -> rbf        (RMSE = 0.12497)
+ segment   6 -> rbf        (RMSE = 0.053987)
+ segment   7 -> rbf        (RMSE = 0.18382)
+ segment   8 -> rbf        (RMSE = 0.06593)
+ segment   9 -> rbf        (RMSE = 0.076084)
+ segment  10 -> rbf        (RMSE = 0.068548)
+ segment  11 -> rbf        (RMSE = 0.032007)
+ segment  12 -> rbf        (RMSE = 0.045651)
+ segment  13 -> rbf        (RMSE = 0.060105)
+ segment  14 -> rbf        (RMSE = 0.073753)
+ segment  15 -> rbf        (RMSE = 0.044113)
+ segment  16 -> rbf        (RMSE = 0.063867)
+ segment  17 -> rbf        (RMSE = 0.074315)
+ segment  18 -> rbf        (RMSE = 0.04363)
+ segment  19 -> rbf        (RMSE = 0.037628)
+ segment  20 -> rbf        (RMSE = 0.04221)
+ segment  21 -> rbf        (RMSE = 0.052932)
+ segment  22 -> rbf        (RMSE = 0.040402)
+ segment  23 -> rbf        (RMSE = 0.036427)
+ segment  24 -> rbf        (RMSE = 0.029965)
+ segment  25 -> rbf        (RMSE = 0.039244)
+ segment  26 -> rbf        (RMSE = 0.045195)
+ segment  27 -> rbf        (RMSE = 0.17548)
+ segment  28 -> rbf        (RMSE = 0.10244)
+ segment  29 -> rbf        (RMSE = 0.071734)
+ segment  30 -> rbf        (RMSE = 0.066736)
+ segment  31 -> rbf        (RMSE = 0.037929)
+ segment  32 -> rbf        (RMSE = 0.13762)
+ segment  33 -> rbf        (RMSE = 0.18723)
+ segment  34 -> rbf        (RMSE = 0.15863)
+ segment  35 -> rbf        (RMSE = 0.19361)
+ segment  36 -> rbf        (RMSE = 0.047269)
+ segment  37 -> rbf        (RMSE = 0.061543)
+ segment  38 -> rbf        (RMSE = 0.032645)
+ segment  39 -> rbf        (RMSE = 0.078865)
+ segment  40 -> rbf        (RMSE = 0.12701)
+ segment  41 -> rbf        (RMSE = 0.048771)
+ segment  42 -> rbf        (RMSE = 0.022194)
+ segment  43 -> rbf        (RMSE = 0.074757)
+ segment  44 -> rbf        (RMSE = 0.10692)
+ segment  45 -> rbf        (RMSE = 0.07317)
+ segment  46 -> rbf        (RMSE = 0.066609)
+ segment  47 -> rbf        (RMSE = 0.047123)
+ segment  48 -> rbf        (RMSE = 0.072291)
+ segment  49 -> rbf        (RMSE = 0.032968)
+ segment  50 -> rbf        (RMSE = 0.045027)
+ segment  51 -> rbf        (RMSE = 0.04986)
+ segment  52 -> rbf        (RMSE = 0.029957)
+ segment  53 -> rbf        (RMSE = 0.038044)
+ segment  54 -> rbf        (RMSE = 0.05017)
+ segment  55 -> rbf        (RMSE = 0.012809)
+ segment  56 -> rbf        (RMSE = 0.01998)
+
+Output layout (relative to this run folder)
+--------------------------------------------
+ figures/<model>/seg_NNN_general.png             full-series view, per segment
+ figures/<model>/seg_NNN_zoom_actual_vs_pred.png  zoomed actual-vs-predicted
+ figures/<model>/seg_NNN_zoom_residual.png        zoomed residual (error) plot
+ figures/<model>/seg_NNN_zoom_parity.png          zoomed predicted-vs-actual scatter
+ statistics/stats_01..10_*.png                    cross-model comparison figures
+ animation/all_models_full_view.gif               all models, fixed full-series view
+ animation/all_models_zoomed.gif                  all models, camera scrolls with window
+ report/prediction_suite_report.txt               this file
+ prediction_suite_results.mat                     all raw numbers behind this report
