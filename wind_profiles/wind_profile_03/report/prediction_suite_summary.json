@@ -1,0 +1,249 @@
+{
+  "run": "wind_profile_03",
+  "schema": "wind-prediction-suite/1.1",
+  "generated_utc": "2026-09-08T21:07:51Z",
+  "settings": {
+    "history_sec": 15,
+    "predict_sec": 1.5,
+    "stride_sec": 1.5,
+    "step_size": 0.05,
+    "selection_criterion": "RMSE",
+    "num_segments": 30,
+    "signal_length": 1201,
+    "duration_sec": 60,
+    "wind_min": 7.9990498722193584,
+    "wind_max": 11.757947938376679,
+    "wind_mean": 9.38001285430917,
+    "wind_std": 0.95111043163529407,
+    "models_to_run": [
+      "rbf",
+      "rbf_arima",
+      "arima"
+    ]
+  },
+  "model_order": [
+    "rbf",
+    "rbf_arima",
+    "arima"
+  ],
+  "models": {
+    "rbf": {
+      "name": "rbf",
+      "rank": 1,
+      "rmse": 0.0024683520883732233,
+      "nrmse": 0.0006566690676176255,
+      "mae": 0.00203295541040621,
+      "mape": 0.022263127806406355,
+      "smape": 0.022263384946618441,
+      "r2": 0.99933869352215443,
+      "dm_pvalue": 1,
+      "time_sec": 0.0063690233333333346,
+      "assets": {
+        "static_full_hires": "wind_profiles/wind_profile_03/prediction/figures/rbf_full_timeline.png",
+        "static_zoom_hires": "wind_profiles/wind_profile_03/prediction/figures/rbf_zoomed_timeline.png",
+        "static_full": "wind_profiles/wind_profile_03/prediction/web/figures/rbf_full.png",
+        "static_zoomed": "wind_profiles/wind_profile_03/prediction/web/figures/rbf_zoomed.png",
+        "gif_full_hires": "wind_profiles/wind_profile_03/prediction/animation/rbf/full.gif",
+        "gif_zoomed_hires": "wind_profiles/wind_profile_03/prediction/animation/rbf/zoomed.gif",
+        "gif_full": "wind_profiles/wind_profile_03/prediction/web/animation/rbf/full.gif",
+        "gif_zoomed": "wind_profiles/wind_profile_03/prediction/web/animation/rbf/zoomed.gif"
+      }
+    },
+    "rbf_arima": {
+      "name": "rbf_arima",
+      "rank": 2,
+      "rmse": 0.0024683520883732233,
+      "nrmse": 0.0006566690676176255,
+      "mae": 0.00203295541040621,
+      "mape": 0.022263127806406355,
+      "smape": 0.022263384946618441,
+      "r2": 0.99933869352215443,
+      "dm_pvalue": null,
+      "time_sec": 0.072250130000000024,
+      "assets": {
+        "static_full_hires": "wind_profiles/wind_profile_03/prediction/figures/rbf_arima_full_timeline.png",
+        "static_zoom_hires": "wind_profiles/wind_profile_03/prediction/figures/rbf_arima_zoomed_timeline.png",
+        "static_full": "wind_profiles/wind_profile_03/prediction/web/figures/rbf_arima_full.png",
+        "static_zoomed": "wind_profiles/wind_profile_03/prediction/web/figures/rbf_arima_zoomed.png",
+        "gif_full_hires": "wind_profiles/wind_profile_03/prediction/animation/rbf_arima/full.gif",
+        "gif_zoomed_hires": "wind_profiles/wind_profile_03/prediction/animation/rbf_arima/zoomed.gif",
+        "gif_full": "wind_profiles/wind_profile_03/prediction/web/animation/rbf_arima/full.gif",
+        "gif_zoomed": "wind_profiles/wind_profile_03/prediction/web/animation/rbf_arima/zoomed.gif"
+      }
+    },
+    "arima": {
+      "name": "arima",
+      "rank": 3,
+      "rmse": 0.09233639758011121,
+      "nrmse": 0.024564751678543297,
+      "mae": 0.072505429542182878,
+      "mape": 0.77676454070325684,
+      "smape": 0.78140227598567269,
+      "r2": -0.59599519552732183,
+      "dm_pvalue": 0.0093792982786595758,
+      "time_sec": 0.27441706666666665,
+      "assets": {
+        "static_full_hires": "wind_profiles/wind_profile_03/prediction/figures/arima_full_timeline.png",
+        "static_zoom_hires": "wind_profiles/wind_profile_03/prediction/figures/arima_zoomed_timeline.png",
+        "static_full": "wind_profiles/wind_profile_03/prediction/web/figures/arima_full.png",
+        "static_zoomed": "wind_profiles/wind_profile_03/prediction/web/figures/arima_zoomed.png",
+        "gif_full_hires": "wind_profiles/wind_profile_03/prediction/animation/arima/full.gif",
+        "gif_zoomed_hires": "wind_profiles/wind_profile_03/prediction/animation/arima/zoomed.gif",
+        "gif_full": "wind_profiles/wind_profile_03/prediction/web/animation/arima/full.gif",
+        "gif_zoomed": "wind_profiles/wind_profile_03/prediction/web/animation/arima/zoomed.gif"
+      }
+    }
+  },
+  "segment_best": [
+    {
+      "segment": 1,
+      "model": "rbf",
+      "rmse": 0.0047961345786432545
+    },
+    {
+      "segment": 2,
+      "model": "rbf",
+      "rmse": 0.0013724128016501962
+    },
+    {
+      "segment": 3,
+      "model": "rbf",
+      "rmse": 0.0035579823116546473
+    },
+    {
+      "segment": 4,
+      "model": "rbf",
+      "rmse": 0.0021484302737515412
+    },
+    {
+      "segment": 5,
+      "model": "rbf",
+      "rmse": 0.0031956607342393095
+    },
+    {
+      "segment": 6,
+      "model": "rbf",
+      "rmse": 0.0036769890041033772
+    },
+    {
+      "segment": 7,
+      "model": "rbf",
+      "rmse": 0.00578853431771452
+    },
+    {
+      "segment": 8,
+      "model": "rbf",
+      "rmse": 0.0022205210483792984
+    },
+    {
+      "segment": 9,
+      "model": "rbf",
+      "rmse": 0.0025453552358332119
+    },
+    {
+      "segment": 10,
+      "model": "rbf",
+      "rmse": 0.0023055512534832629
+    },
+    {
+      "segment": 11,
+      "model": "rbf",
+      "rmse": 0.001827758583169434
+    },
+    {
+      "segment": 12,
+      "model": "rbf",
+      "rmse": 0.001593737157974603
+    },
+    {
+      "segment": 13,
+      "model": "rbf",
+      "rmse": 0.0015659220903180802
+    },
+    {
+      "segment": 14,
+      "model": "rbf",
+      "rmse": 0.0016860185211378133
+    },
+    {
+      "segment": 15,
+      "model": "rbf",
+      "rmse": 0.0014760764727994632
+    },
+    {
+      "segment": 16,
+      "model": "rbf",
+      "rmse": 0.0033445006093607071
+    },
+    {
+      "segment": 17,
+      "model": "rbf",
+      "rmse": 0.0023463126297863534
+    },
+    {
+      "segment": 18,
+      "model": "rbf",
+      "rmse": 0.0044384320183280647
+    },
+    {
+      "segment": 19,
+      "model": "rbf",
+      "rmse": 0.0021004526366596565
+    },
+    {
+      "segment": 20,
+      "model": "rbf",
+      "rmse": 0.0036111670653125667
+    },
+    {
+      "segment": 21,
+      "model": "rbf",
+      "rmse": 0.0012792750708778661
+    },
+    {
+      "segment": 22,
+      "model": "rbf",
+      "rmse": 0.001573021119873575
+    },
+    {
+      "segment": 23,
+      "model": "rbf",
+      "rmse": 0.0013966398141962314
+    },
+    {
+      "segment": 24,
+      "model": "rbf",
+      "rmse": 0.0007614266221363941
+    },
+    {
+      "segment": 25,
+      "model": "rbf",
+      "rmse": 0.0012480956430657242
+    },
+    {
+      "segment": 26,
+      "model": "rbf",
+      "rmse": 0.00073000874012702258
+    },
+    {
+      "segment": 27,
+      "model": "rbf",
+      "rmse": 0.0025786480542780385
+    },
+    {
+      "segment": 28,
+      "model": "rbf",
+      "rmse": 0.0019697517550633257
+    },
+    {
+      "segment": 29,
+      "model": "rbf",
+      "rmse": 0.0045742147912717053
+    },
+    {
+      "segment": 30,
+      "model": "rbf",
+      "rmse": 0.0023415316960074448
+    }
+  ]
+}

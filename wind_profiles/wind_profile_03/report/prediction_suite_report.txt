@@ -1,0 +1,65 @@
+=====================================================
+ WIND PREDICTION SUITE -- RUN REPORT
+ Run: wind_profile_03
+=====================================================
+
+Settings
+--------
+ history_sec          : 15.000
+ predict_sec          : 1.500
+ stride_sec           : 1.500
+ selection_criterion  : RMSE
+ num_segments         : 30
+ models_to_run        : rbf, rbf_arima, arima
+
+Summary (sorted by RMSE)
+------------------------
+Model              RMSE        MAE       MAPE         R2     Time_sec
+rbf           0.0024684   0.002033   0.022263     0.9993     0.006369
+rbf_arima     0.0024684   0.002033   0.022263     0.9993      0.07225
+arima          0.092336   0.072505    0.77676     -0.596      0.27442
+
+Best model per segment (criterion: RMSE)
+----------------------------------------
+ segment   1 -> rbf        (RMSE = 0.0047961)
+ segment   2 -> rbf        (RMSE = 0.0013724)
+ segment   3 -> rbf        (RMSE = 0.003558)
+ segment   4 -> rbf        (RMSE = 0.0021484)
+ segment   5 -> rbf        (RMSE = 0.0031957)
+ segment   6 -> rbf        (RMSE = 0.003677)
+ segment   7 -> rbf        (RMSE = 0.0057885)
+ segment   8 -> rbf        (RMSE = 0.0022205)
+ segment   9 -> rbf        (RMSE = 0.0025454)
+ segment  10 -> rbf        (RMSE = 0.0023056)
+ segment  11 -> rbf        (RMSE = 0.0018278)
+ segment  12 -> rbf        (RMSE = 0.0015937)
+ segment  13 -> rbf        (RMSE = 0.0015659)
+ segment  14 -> rbf        (RMSE = 0.001686)
+ segment  15 -> rbf        (RMSE = 0.0014761)
+ segment  16 -> rbf        (RMSE = 0.0033445)
+ segment  17 -> rbf        (RMSE = 0.0023463)
+ segment  18 -> rbf        (RMSE = 0.0044384)
+ segment  19 -> rbf        (RMSE = 0.0021005)
+ segment  20 -> rbf        (RMSE = 0.0036112)
+ segment  21 -> rbf        (RMSE = 0.0012793)
+ segment  22 -> rbf        (RMSE = 0.001573)
+ segment  23 -> rbf        (RMSE = 0.0013966)
+ segment  24 -> rbf        (RMSE = 0.00076143)
+ segment  25 -> rbf        (RMSE = 0.0012481)
+ segment  26 -> rbf        (RMSE = 0.00073001)
+ segment  27 -> rbf        (RMSE = 0.0025786)
+ segment  28 -> rbf        (RMSE = 0.0019698)
+ segment  29 -> rbf        (RMSE = 0.0045742)
+ segment  30 -> rbf        (RMSE = 0.0023415)
+
+Output layout (relative to this run folder)
+--------------------------------------------
+ figures/<model>/seg_NNN_general.png             full-series view, per segment
+ figures/<model>/seg_NNN_zoom_actual_vs_pred.png  zoomed actual-vs-predicted
+ figures/<model>/seg_NNN_zoom_residual.png        zoomed residual (error) plot
+ figures/<model>/seg_NNN_zoom_parity.png          zoomed predicted-vs-actual scatter
+ statistics/stats_01..10_*.png                    cross-model comparison figures
+ animation/all_models_full_view.gif               all models, fixed full-series view
+ animation/all_models_zoomed.gif                  all models, camera scrolls with window
+ report/prediction_suite_report.txt               this file
+ prediction_suite_results.mat                     all raw numbers behind this report
